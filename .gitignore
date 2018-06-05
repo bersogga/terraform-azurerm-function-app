@@ -1,0 +1,28 @@
+# .tfvars files
+*.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Local .terraform directory
+**/.terraform/*
+
+# Exclude test files
+!testing.tfvars
+!terraform.tfvars
+
+# IDE config files
+**/.vscode/*
+
+# MacOS files
+.DS_Store
+
+# .backup files
+*.backup
+
+# .bak files
+*.bak
+
+# .log files
+*.log
