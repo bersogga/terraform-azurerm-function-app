@@ -10,17 +10,17 @@ output "identity_tenant_id" {
 
 output "storage_account_name" {
   description = "The name of the storage account created for the function app"
-  value = "${azurerm_storage_account.funcsta.name}"
+  value       = "${azurerm_storage_account.funcsta.name}"
 }
 
 output "storage_account_connection_string" {
   description = "Connection string to the storage account created for the function app"
-  value = "${azurerm_storage_account.funcsta.primary_connection_string}"
-  sensitive = true
+  value       = "${azurerm_storage_account.funcsta.primary_connection_string}"
+  sensitive   = true
 }
 
 output "storage_account_primary_access_key" {
   description = "Primary access key to the storage account created for the function app"
-  value = "${azurerm_storage_account.funcsta.primary_access_key}"
-  sensitive = true
+  value       = "${azurerm_storage_account.funcsta.primary_access_key}"
+  sensitive   = true
 }
